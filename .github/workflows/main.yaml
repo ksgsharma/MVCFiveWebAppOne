@@ -29,11 +29,11 @@ jobs:
       - name: Install NuGet
         uses: nuget/setup-nuget@v1
 
-      - name: Testing runner
-        run: |
-          docker ps
-          pwd
-          nuget --version
+      # - name: Testing runner
+      #   run: |
+      #     docker ps
+      #     pwd
+      #     nuget --version
 
       - name: NuGet Restore
         run: nuget restore ${{ env.solution }}
