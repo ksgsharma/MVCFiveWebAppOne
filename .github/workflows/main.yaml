@@ -29,14 +29,8 @@ jobs:
       - name: Install NuGet
         uses: nuget/setup-nuget@v1
 
-      # - name: Testing runner
-      #   run: |
-      #     docker ps
-      #     pwd
-      #     nuget --version
-
-      - name: NuGet Restore
-        run: nuget restore ${{ env.solution }}
+      # - name: NuGet Restore
+      #   run: nuget restore ${{ env.solution }}
 
       - name: Setup-dotnet
         uses: actions/setup-dotnet@v2
