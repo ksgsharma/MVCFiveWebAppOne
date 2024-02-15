@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  solution: "*.sln"
+  solution: "SampleWebApp.sln"
   buildPlatform: 'Any CPU'
   buildConfiguration: "Release"
   buildMajorVersion: "1"
